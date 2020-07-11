@@ -1,0 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 12, 2019, 12:39:12 PM
+    Author     : Rasman Swargo
+*/
+.mainFxmlClass {
+   
+    -fx-background-image: url("../OnlineJudge/Admin/3d-wallpapear.jpg");
+}

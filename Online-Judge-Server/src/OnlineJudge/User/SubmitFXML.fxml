@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="680.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.User.SubmitFXMLController">
+    <stylesheets>
+        <URL value="@submitfxml.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="39.0" layoutY="40.0" prefHeight="31.0" prefWidth="71.0" text="Problem :" textFill="WHITE" />
+      <TextField fx:id="ProblemName" layoutX="159.0" layoutY="40.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="40.0" layoutY="85.0" prefHeight="31.0" prefWidth="86.0" text="Language :" textFill="WHITE" />
+      <MenuButton fx:id="SelectLanguageButton" layoutX="159.0" layoutY="85.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Select Language">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#CppChosed" text="C++" />
+          <MenuItem mnemonicParsing="false" onAction="#JavaChoosed" text="Java" />
+        </items>
+      </MenuButton>
+      <Label layoutX="39.0" layoutY="134.0" prefHeight="31.0" prefWidth="96.0" text="Source Code:" textFill="WHITE" />
+      <Label layoutX="35.0" layoutY="389.0" prefHeight="31.0" prefWidth="96.0" text="Or Chose File :" textFill="WHITE" />
+      <Button fx:id="ChoseFileButton" layoutX="159.0" layoutY="389.0" mnemonicParsing="false" onAction="#ChoseFileButtonClicked" prefHeight="31.0" prefWidth="187.0" text="Chose File" />
+      <Label fx:id="FileMessege" layoutX="370.0" layoutY="389.0" prefHeight="31.0" prefWidth="110.0" text="No File Chosen" textFill="WHITE" />
+      <TextArea fx:id="SourceCode" layoutX="159.0" layoutY="134.0" prefHeight="242.0" prefWidth="473.0" />
+      <Button layoutX="305.0" layoutY="433.0" mnemonicParsing="false" onAction="#SubmitButtonClicked" prefHeight="31.0" prefWidth="71.0" text="Submit" />
+      <Label fx:id="ErrorMessage" layoutX="163.0" layoutY="464.0" prefHeight="31.0" prefWidth="284.0" textFill="WHITE" />
+      <Label fx:id="ProblemIdMessage" layoutX="359.0" layoutY="40.0" prefHeight="31.0" prefWidth="123.0" text="Enter Problem ID" />
+   </children>
+</AnchorPane>

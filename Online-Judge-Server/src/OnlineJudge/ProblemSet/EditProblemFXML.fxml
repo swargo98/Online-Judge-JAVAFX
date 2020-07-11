@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="680.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.ProblemSet.EditProblemFXMLController">
+    <stylesheets>
+        <URL value="@editproblemfxml.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#AddProblemButtonClicked" prefHeight="31.0" prefWidth="137.0" text="Add Problem" />
+      <Button layoutX="151.0" layoutY="14.0" mnemonicParsing="false" onAction="#DeleteProblemButtonClicked" text="Delete Problem" />
+      <AnchorPane fx:id="EditProblemNode" layoutX="14.0" layoutY="46.0" prefHeight="460.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0" />
+   </children>
+</AnchorPane>

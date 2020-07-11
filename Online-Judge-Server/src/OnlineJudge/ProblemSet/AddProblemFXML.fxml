@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="680.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.ProblemSet.AddProblemFXMLController">
+    <stylesheets>
+        <URL value="@addproblemfxml.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ChooseProblemButtonClicked" prefHeight="31.0" prefWidth="276.0" text="Choose Problem Statement(*.pdf,*txt)" />
+      <MenuButton fx:id="Type" layoutX="14.0" layoutY="45.0" mnemonicParsing="false" text="Output Format">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#StaticSelected" text="Static" />
+          <MenuItem mnemonicParsing="false" onAction="#DynamicSelected" text="Dynamic" />
+        </items>
+      </MenuButton>
+      <Button layoutX="14.0" layoutY="76.0" mnemonicParsing="false" onAction="#SelectVarifierCode" text="Verifier Code" />
+      <TextField fx:id="Name" layoutX="152.0" layoutY="243.0" />
+      <Label layoutX="14.0" layoutY="243.0" prefHeight="31.0" prefWidth="122.0" text="Problem Name :" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="274.0" prefHeight="31.0" prefWidth="122.0" text="Problem Id :" textFill="WHITE" />
+      <TextField fx:id="Id" layoutX="152.0" layoutY="274.0" />
+      <Label layoutX="14.0" layoutY="305.0" prefHeight="31.0" prefWidth="122.0" text="Time Limit(ms):" textFill="WHITE" />
+      <TextField fx:id="TimeLimit" layoutX="152.0" layoutY="305.0" />
+      <TextField fx:id="MemoryLimit" layoutX="152.0" layoutY="336.0" />
+      <Label layoutX="14.0" layoutY="336.0" prefHeight="31.0" prefWidth="128.0" text="Memory Limit(kb):" textFill="WHITE" />
+      <Button layoutX="307.0" layoutY="401.0" mnemonicParsing="false" onAction="#SubmitButtonClicked" text="Submit" />
+      <Label fx:id="ErrorMessege" layoutX="14.0" layoutY="401.0" prefHeight="31.0" prefWidth="285.0" text="Error Messege" textFill="WHITE" />
+      <Button layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#AddInput" text="Add Input -&gt; Output" />
+   </children>
+</AnchorPane>

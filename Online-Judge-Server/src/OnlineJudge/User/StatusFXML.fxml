@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="680.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.User.StatusFXMLController">
+    <stylesheets>
+        <URL value="@statusfxml.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="StatusTable" prefHeight="501.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="SubmissionId" prefWidth="62.0" sortType="DESCENDING" text="#" />
+            <TableColumn fx:id="SubmissionTime" prefWidth="70.0" text="When" />
+            <TableColumn fx:id="UserHandle" minWidth="0.0" prefWidth="114.0" text="Who" />
+          <TableColumn fx:id="ProblemName" minWidth="0.0" prefWidth="139.0" text="Problem" />
+            <TableColumn fx:id="Language" minWidth="0.0" prefWidth="52.0" text="Lang" />
+            <TableColumn fx:id="Verdict" minWidth="0.0" prefWidth="96.0" text="Verdict" />
+            <TableColumn fx:id="TimeTaken" minWidth="0.0" prefWidth="65.0" text="Time" />
+            <TableColumn fx:id="MemoryTaken" minWidth="0.0" prefWidth="81.0" text="Memory" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

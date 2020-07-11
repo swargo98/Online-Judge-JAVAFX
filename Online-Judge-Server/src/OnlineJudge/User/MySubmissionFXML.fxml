@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.User.MySubmissionFXMLController">
+   <children>
+      <TableView fx:id="MySubmissionTable" prefHeight="500.0" prefWidth="680.0">
+        <columns>
+          <TableColumn fx:id="SubmissionTime" prefWidth="84.0" text=" When" />
+          <TableColumn fx:id="UserHandle" prefWidth="104.0" text="Who" />
+            <TableColumn fx:id="ProblemName" prefWidth="59.0" text="Problem" />
+            <TableColumn fx:id="Language" prefWidth="103.0" text="Lang" />
+            <TableColumn fx:id="Verdict" prefWidth="91.0" text="Verdict" />
+            <TableColumn fx:id="TimeTaken" prefWidth="112.0" text="Time" />
+            <TableColumn fx:id="MemoryTaken" prefWidth="126.0" text="Memory" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
