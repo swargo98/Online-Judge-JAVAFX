@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="680.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.User.MyProfileFXMLController">
+    <stylesheets>
+        <URL value="@myprofilefxml.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="59.0" layoutY="53.0" prefHeight="70.0" prefWidth="514.0" text="Code War Online Judge" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="157.0" text="NAME:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="230.0" text="HANDLE:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="297.0" text="TOTAL TRIED:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="364.0" text="TOTAL ACCEPTED:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="NameLabel" layoutX="141.0" layoutY="157.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="HandelLabel" layoutX="163.0" layoutY="230.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="TotalTriedLabel" layoutX="213.0" layoutY="297.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="TotalAcceptedLabel" layoutX="260.0" layoutY="364.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

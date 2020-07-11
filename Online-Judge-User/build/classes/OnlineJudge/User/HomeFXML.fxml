@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.User.HomeFXMLController">
+   <children>
+      <Label layoutX="188.0" layoutY="14.0" prefHeight="35.0" prefWidth="315.0" text="CODEWAR ONLINE JUDGE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="49.0" layoutY="78.0" prefHeight="136.0" prefWidth="609.0" text="Online judges are systems designed for the reliable evaluation of algorithm source code submitted by users, &#10;which is next compiled and tested in a homogeneous environment.&#10;&#10;CODEWAR Online Judge is a simple automated judge for programming problems.  &#10;A user may submit a solution in C++, and Java. &#10;&#10;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dp1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="150.0" layoutX="447.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dp2.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="50.0" layoutY="404.0" prefHeight="39.0" prefWidth="267.0" text="Rasman Mubtasim Swargo(1705051)" />
+      <TextField layoutX="49.0" layoutY="217.0" text="Prepared By:" />
+      <TextField layoutX="433.0" layoutY="404.0" prefHeight="39.0" prefWidth="218.0" text="Tanberul Islam(1705033)" />
+      <TextField layoutX="49.0" layoutY="447.0" prefHeight="39.0" prefWidth="615.0" text="Supervised By: Khaled Mahmud Shahriar, Department of Computer Science and Engineering, BUET" />
+   </children>
+</AnchorPane>

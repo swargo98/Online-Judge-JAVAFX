@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="720.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.User.UserFXMLController">
+    <stylesheets>
+        <URL value="@userfxml.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="793.0" fitWidth="1072.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg2.jpeg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="23.0" layoutY="39.0" prefHeight="35.0" prefWidth="680.0">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#HomeButtonClicked" prefHeight="31.0" prefWidth="68.0" text="Home" />
+            <Button layoutX="80.0" layoutY="10.0" mnemonicParsing="false" onAction="#ContestButtonClicked" prefHeight="31.0" prefWidth="72.0" text="Contest" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ProblemsetButtonClicked" prefHeight="31.0" prefWidth="103.0" text="Problemset" />
+            <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" onAction="#SubmitSolutionButtonClicked" prefHeight="31.0" prefWidth="132.0" text="Submit Solution" />
+            <Button layoutX="290.0" layoutY="10.0" mnemonicParsing="false" onAction="#StatusButtonClicked" prefHeight="31.0" prefWidth="64.0" text="Status" />
+            <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" onAction="#MySubmissionButtonClicked" prefHeight="30.0" prefWidth="131.0" text="My Submission" />
+            <Button layoutX="220.0" layoutY="10.0" mnemonicParsing="false" onAction="#MyProfileButtonClicked" prefHeight="31.0" prefWidth="111.0" text="My Profile" />
+         </children>
+      </HBox>
+      <AnchorPane fx:id="Node" layoutX="22.0" layoutY="81.0" prefHeight="500.0" prefWidth="680.0" />
+      <Text fill="WHITE" layoutX="7.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="JUSTIFY" wrappingWidth="91.0" />
+      <Text fx:id="UserName" fill="WHITE" layoutX="97.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName" textAlignment="JUSTIFY" wrappingWidth="148.0" />
+      <Button layoutX="592.0" layoutY="-3.0" mnemonicParsing="false" onAction="#LogOutButtonClicked" prefHeight="31.0" prefWidth="110.0" text="Log Out" />
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,6 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\iRounge01\Documents\GitHub\Online-Judge-Demo>g++ SourceCode.cpp
+
+C:\Users\iRounge01\Documents\GitHub\Online-Judge-Demo>

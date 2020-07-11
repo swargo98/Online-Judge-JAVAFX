@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="720.0" style="-fx-background-color: #8fc1e0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OnlineJudge.OnlineJudgeFXMLController">
+   <children>
+      <ImageView fitHeight="569.0" fitWidth="720.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="ServerIP" layoutX="278.0" layoutY="45.0" promptText="localhost" text="localhost" />
+      <Button layoutX="58.0" layoutY="45.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Enter Server IP:" />
+      <Button layoutX="522.0" layoutY="45.0" mnemonicParsing="false" onAction="#ConnectServer" prefHeight="31.0" prefWidth="153.0" text="Connect" />
+      <Text fx:id="Message" layoutX="278.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wait please" wrappingWidth="187.0" />
+   </children>
+</AnchorPane>
